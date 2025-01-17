@@ -1,0 +1,67 @@
+<people>
+<person>
+<id>7966824611</id>
+<name>John Doe</name>
+<dob>1989-06-15</dob> <!-- Date of Birth -->
+<address>
+<street>123 Main St</street>
+<city>Springfield</city>
+<state>IL</state>
+<zipcode>62701</zipcode>
+
+<country>USA</country>
+</address>
+</person>
+<person>
+<id>8699099618</id>
+<name>Sally Doe</name>
+<dob>2010-04-03</dob>
+<address>
+<street>564 State St</street>
+<city>Springfield</city>
+<state>IL</state>
+<zipcode>77664</zipcode>
+<country>USA</country>
+</address>
+</person>
+<person>
+<id>8699099618</id>
+<name>Mario Rodríguez</name>
+<dob>2000-05-03</dob>
+<address>
+<street>334 N 712 E</street>
+<city>SLC</city>
+<state>UT</state>
+<zipcode>12324</zipcode>
+<country>USA</country>
+</address>
+</person>
+<person>
+<id>8699099618</id>
+<name>Margaret Doe</name>
+<!-- Some birth dates do not have dashes, this still needs to be
+parsed and handled correctly -->
+<dob>19990101</dob>
+<address>
+<street>564 State St</street>
+<city>Springfield</city>
+<state>IL</state>
+<zipcode>46753</zipcode>
+<country>USA</country>
+</address>
+</person>
+<!-- This record is invalid as it does not contain the country field. It
+should be discarded. -->
+<person>
+
+<id>6240350649</id>
+<name>Zack Black</name>
+<dob>1930-03-01</dob>
+<address>
+<street>334 N 712 E</street>
+<city>SLC</city>
+<state>UT</state>
+<zipcode>12324</zipcode>
+</address>
+</person>
+</people>
