@@ -50,8 +50,8 @@ The path to the XML file containing the people data. This file should be structu
 - **JSON Report**: `age_categorized_by_city_<YYYYMMDD>.json` – Contains the summary of the number of Adults and Children by city.
 - **Bar Graph**: `average_age_by_city_<YYYYMMDD>.png` (if `--output_graph` is provided) – A bar graph of the average age by city.
 
-# Test Data
-For your convenience, a testing input file and example outputs from that input data have been provided under `test_data` within this repository.
+# Example Data
+For your convenience, a example input file and outputs from that input data have been provided under `example_data` within this repository.
 
 # Definitions
 <sup>1</sup> An invalid record refers to any person with a blank or NaN record within one of the values; reports are only generated from people with complete data.<br>
