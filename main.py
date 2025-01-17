@@ -2,14 +2,11 @@
 #Created on: 1/16/2025
 #Last Updated on: 1/17/2025
 
-#load in python packages
+#load in utilized python packages
 import pandas as pd
-import xmlschema
-import lxml
 import json
 import matplotlib.pyplot as plt
 from datetime import datetime
-from pandas import json_normalize
 from lxml import etree
 import argparse
 
