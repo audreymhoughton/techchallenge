@@ -1,5 +1,5 @@
 # People Data XML Processing and Report Generation
-This Python script processes an XML file containing people's data, validates and cleans the data, categorizes individuals as "Adult" or "Child" based on age, generates a summary report, and optionally outputs a bar graph of the average age by city.
+This Python script processes an XML file containing people's data, validates and cleans the data, categorizes individuals by city as "Adult" or "Child" based on age, generates a summary report, and optionally outputs a bar graph of the average age by city.
 
 # Features
 - **XML Parsing:** Reads the XML file and extracts relevant data (name, id, date of birth, address, etc.).
