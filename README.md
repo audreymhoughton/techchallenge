@@ -2,12 +2,12 @@
 This Python script processes an XML file containing people's data, validates and cleans the data, categorizes individuals as "Adult" or "Child" based on age, generates a summary report, and optionally outputs a bar graph of the average age by city.
 
 # Features
-- XML Parsing: Reads the XML file and extracts relevant data (name, id, date of birth, address, etc.).
-- Data Processing: Validates, formats dates, infers missing country data based on zip codes, and filters invalid records<sup>1</sup>.
-- Age Categorization: Categorizes individuals as "Adult"<sup>2</sup> or "Child"<sup>3</sup> based on their age.
-- Report Generation: Outputs a JSON report summarizing the number of Adults and Children.
-- Graph Generation: Optionally generates a bar graph showing the average age by city<sup>4</sup> and saves it as a PNG file.
-- File Dating: Outputs filenames with the current date (in the format `YYYYMMDD`)
+- **XML Parsing:** Reads the XML file and extracts relevant data (name, id, date of birth, address, etc.).
+- **Data Processing:** Validates, formats dates, infers missing country data based on zip codes, and filters invalid records<sup>1</sup>.
+- **Age Categorization:** Categorizes individuals as "Adult"<sup>2</sup> or "Child"<sup>3</sup> based on their age.
+- **Report Generation:** Outputs a JSON report summarizing the number of Adults and Children.
+- **Graph Generation:** Optionally generates a bar graph showing the average age by city<sup>4</sup> and saves it as a PNG file.
+- **File Dating:** Outputs filenames with the current date (in the format `YYYYMMDD`)
 
 # Requirements
 This code was created utilizing `Python 3.12.8` and has been tested on that version alone. Make sure you have the required dependencies installed. You can install them by running:
@@ -37,7 +37,7 @@ python script.py people_data.xml ./output/
 ```
 This will process the people_data.xml file and save the JSON report to `./output/age_categorized.json`.
 
-To also generate the bar graph, run:
+## To also generate the bar graph, run:
 ```bash
 python script.py people_data.xml ./output/ --output_graph
 ```
