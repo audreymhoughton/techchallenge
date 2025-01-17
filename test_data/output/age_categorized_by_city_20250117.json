@@ -1,0 +1,10 @@
+{
+    "SLC": {
+        "Adult": 2,
+        "Child": 0
+    },
+    "Springfield": {
+        "Adult": 1,
+        "Child": 1
+    }
+}

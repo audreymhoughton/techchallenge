@@ -88,13 +88,14 @@ def child_or_adult(df):
 
 def generate_report(df, path):
     categorized_df = child_or_adult(df)
-    counts_summary = categorized_df['category'].value_counts().to_dict()
+    counts_by_city = categorized_df.groupby('city')['category'].value_counts().unstack(fill_value=0)
+    counts_summary = counts_by_city.to_dict(orient='index')
+    
+    for city, counts in counts_summary.items():
+        print(f"City: {city}, Adults: {counts.get('Adult', 0)}, Children: {counts.get('Child', 0)}")
     
     
-    print(f"Number of Adults (18+): {counts_summary.get('Adult', 0)}")
-    print(f"Number of Children (<18): {counts_summary.get('Child', 0)}")
-    
-    with open(path + 'age_categorized_' + get_todays_date() + '.json', 'w') as json_file:
+    with open(path + 'age_categorized_by_city_' + get_todays_date() + '.json', 'w') as json_file:
         json.dump(counts_summary, json_file, indent=4)
     
     return categorized_df
