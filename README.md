@@ -24,9 +24,9 @@ python script.py <input_file> <output_path> [--output_graph]
 ```
 ## Arguments:
 - `input_file`: 
-    - *Required* Path to the input XML file containing people data.
+    - Required. Path to the input XML file containing people data.
 - `output_path`:
-    - *Required*. Path to the output directory where the JSON report and the graph (if requested) will be saved. The output JSON file will include the number of adults and children by city, and will be named `age_categorized_by_city_<YYYYMMDD>.json`.
+    - Required. Path to the output directory where the JSON report and the graph (if requested) will be saved. The output JSON file will include the number of adults and children by city, and will be named `age_categorized_by_city_<YYYYMMDD>.json`.
 - `--output_graph`: 
     - Optional flag. If specified, a bar graph of average age by city will be generated and saved as `average_age_by_city_<YYYYMMDD>.png` in the output directory.
 
