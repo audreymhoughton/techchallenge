@@ -50,7 +50,7 @@ The path to the XML file containing the people data. This file should be structu
 For your convenience, a testing input file and example outputs from that input data have been provided under `test_data` within this repository.
 
 # Definitions
-<sup>1</sup> An invalid record refers to any person with a blank or NaN record within one of the values; reports are only generated from people with complete data.
-<sup>2</sup> Over the age of 18, determined by their date of birth and today's date.
-<sup>3</sup> Under the age of 18, determined by their date of birth and today's date.
+<sup>1</sup> An invalid record refers to any person with a blank or NaN record within one of the values; reports are only generated from people with complete data.<br>
+<sup>2</sup> Over the age of 18, determined by their date of birth and today's date.<br>
+<sup>3</sup> Under the age of 18, determined by their date of birth and today's date.<br>
 <sup>4</sup> Rounded to the nearest whole number, as bar graphs prefer whole numbers.
