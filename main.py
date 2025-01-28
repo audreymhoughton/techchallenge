@@ -191,7 +191,7 @@ def generate_report(df, path):
         print(f"City: {city}, Adults: {counts.get('Adult', 0)}, Children: {counts.get('Child', 0)}")
     
     
-    with open(path + 'age_categorized_by_city_' + get_todays_date() + '.json', 'w') as json_file:
+    with open(path + 'age_categorized_by_city_' + get_todays_date() + '.json', 'w+') as json_file:
         json.dump(counts_summary, json_file, indent=4)
     
     return categorized_df
@@ -228,7 +228,7 @@ def create_bar_graph(series, path):
     Returns:
         None
     '''
-    df.plot(kind='bar', color='green', edgecolor='black')
+    series.plot(kind='bar', color='green', edgecolor='black')
     plt.title('Average Age by City')
     plt.xlabel('City')
     plt.ylabel('Average Age (Years)')
